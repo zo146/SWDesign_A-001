@@ -24,11 +24,11 @@ classDiagram
     %% Account Entity Class
     class Account {
         -number: String
-        -balance: double
-        +deposit(id: String, amount: double) boolean
-        +withdraw(id: String, amount: double) boolean
-        +transfer(id: String, targetAccountNumber: String, amount: double) boolean
-        +computeBalance() double
+        -balance: long
+        +withdraw(id: String, amount: long) boolean
+	+deposit(id: String, amount: long) boolean
+        +transfer(id: String, targetAccountNumber: String, amount: long) boolean
+        +computeBalance() long
     }
 
     %% Relationships
